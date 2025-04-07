@@ -15,6 +15,8 @@
                 alertBox.classList.add('d-none');
             }
             form.classList.add('was-validated');
+            event.preventDefault();
+            event.stopPropagation();
         }, false);
     });
 })()
